@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EjemplosFirebase</string>
+    <string name="hint_email">Capture el email</string>
+    <string name="hint_password">Agregue el password</string>
+    <string name="create_account_button">Crear cuenta</string>
+    <string name="button_sign_in">Sign In</string>
+    <string name="welcome_to_platzi">Bienvenido a Platzi</string>
+    <string name="signout_button">SignOut</string>
+    <string name="button_forgotten_password">Password Olvidado</string>
+</resources>

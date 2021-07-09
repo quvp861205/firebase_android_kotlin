@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".WelcomeActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_platzi"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tvUserDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_platzi"
+        android:layout_below="@id/tvTitle"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"></TextView>
+
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signout_button"
+        android:layout_below="@id/tvUserDetail"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"></Button>
+
+</RelativeLayout>
