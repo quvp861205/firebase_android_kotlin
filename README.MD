@@ -25,4 +25,8 @@ https://firebase.google.com/docs/auth/android/google-signin?hl=es
 
 ![](list_item_realtimedatabase.png)
 
+**Cargar, Subir y Descargar imagenes en Firestore**
+
+![](firestore.png)
+
 

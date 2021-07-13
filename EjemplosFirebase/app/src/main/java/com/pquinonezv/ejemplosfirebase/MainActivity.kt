@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
     private var btnSignInGoogle: SignInButton? = null
     private var btnSignInFacebook: LoginButton? = null
     private var btnRealtime: Button? = null
+    private var btnStorage: Button? = null
 
     private var editEmail : EditText? = null
     private var editPassword : EditText? = null
@@ -61,6 +62,8 @@ class MainActivity : AppCompatActivity() {
         btnSignInGoogle = findViewById(R.id.btnSignInGoogle)
         btnSignInFacebook = findViewById(R.id.btnSignInFacebbok)
         btnRealtime = findViewById(R.id.btnRealtime)
+        btnStorage = findViewById(R.id.btnStorage)
+
         editEmail = findViewById(R.id.etEmail)
         editPassword = findViewById(R.id.etPassword)
 
@@ -90,7 +93,13 @@ class MainActivity : AppCompatActivity() {
         btnRealtime?.setOnClickListener(View.OnClickListener {
             var intent: Intent = Intent(this, RealtimeDatabaseFirebase::class.java)
             startActivity(intent)
-            finish()
+
+        })
+
+        btnStorage?.setOnClickListener(View.OnClickListener {
+            var intent: Intent = Intent(this, FirebaseStorage::class.java)
+            startActivity(intent)
+           
         })
 
     }

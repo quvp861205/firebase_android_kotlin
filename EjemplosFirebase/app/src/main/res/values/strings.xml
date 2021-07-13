@@ -11,5 +11,8 @@
     <string name="fb_login_protocol_scheme">fb962122567915637</string>
     <string name="button_realtime">Realtime Database</string>
     <string name="add_artist">Agregar Artista</string>
+    <string name="btn_download">Descarga imagen</string>
+    <string name="btn_upload">Subir imagen</string>
+    <string name="button_storage">Firebase Storage</string>
 
 </resources>
