@@ -54,4 +54,10 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp" />
 
+    <Button
+        android:id="@+id/btnRealtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_realtime"></Button>
+
 </LinearLayout>

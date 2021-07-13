@@ -11,5 +11,18 @@ Crear cuenta y proyecto en firebase: https://firebase.google.com/
 ![](home_screen_with_email.png)
 ![](signin_with_email.png)
 
+
 **Login con gmail**
+
 https://firebase.google.com/docs/auth/android/google-signin?hl=es
+
+
+**Login con google o facebook**
+
+![](signin_socialmedia.png)
+
+**Agregar, Listar y Remover datos con Realtimedatabase Firebase**
+
+![](list_item_realtimedatabase.png)
+
+

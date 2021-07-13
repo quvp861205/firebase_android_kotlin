@@ -45,6 +45,8 @@ class MainActivity : AppCompatActivity() {
     private var btnForgottenPassword : Button? = null
     private var btnSignInGoogle: SignInButton? = null
     private var btnSignInFacebook: LoginButton? = null
+    private var btnRealtime: Button? = null
+
     private var editEmail : EditText? = null
     private var editPassword : EditText? = null
 
@@ -58,6 +60,7 @@ class MainActivity : AppCompatActivity() {
         btnForgottenPassword = findViewById(R.id.btnforgottenPassword)
         btnSignInGoogle = findViewById(R.id.btnSignInGoogle)
         btnSignInFacebook = findViewById(R.id.btnSignInFacebbok)
+        btnRealtime = findViewById(R.id.btnRealtime)
         editEmail = findViewById(R.id.etEmail)
         editPassword = findViewById(R.id.etPassword)
 
@@ -82,6 +85,12 @@ class MainActivity : AppCompatActivity() {
         //Loguearse con google
         btnSignInGoogle?.setOnClickListener(View.OnClickListener {
             signInGoogle()
+        })
+
+        btnRealtime?.setOnClickListener(View.OnClickListener {
+            var intent: Intent = Intent(this, RealtimeDatabaseFirebase::class.java)
+            startActivity(intent)
+            finish()
         })
 
     }

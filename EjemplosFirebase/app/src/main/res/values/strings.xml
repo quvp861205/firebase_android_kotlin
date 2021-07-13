@@ -7,6 +7,9 @@
     <string name="welcome_to_platzi">Bienvenido a Platzi</string>
     <string name="signout_button">SignOut</string>
     <string name="button_forgotten_password">Password Olvidado</string>
-    <string name="facebook_app_id">962122567915637</string> <string name="fb_login_protocol_scheme">fb962122567915637</string>
+    <string name="facebook_app_id">962122567915637</string>
+    <string name="fb_login_protocol_scheme">fb962122567915637</string>
+    <string name="button_realtime">Realtime Database</string>
+    <string name="add_artist">Agregar Artista</string>
 
 </resources>
