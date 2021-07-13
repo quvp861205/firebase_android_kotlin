@@ -11,3 +11,5 @@ Crear cuenta y proyecto en firebase: https://firebase.google.com/
 ![](home_screen_with_email.png)
 ![](signin_with_email.png)
 
+**Login con gmail**
+https://firebase.google.com/docs/auth/android/google-signin?hl=es

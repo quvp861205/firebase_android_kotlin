@@ -7,11 +7,16 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.squareup.picasso.Picasso
 
 class WelcomeActivity : AppCompatActivity() {
 
@@ -20,6 +25,7 @@ class WelcomeActivity : AppCompatActivity() {
 
     private var tvUserDetail : TextView? = null
     private var btnSignOut : Button? = null
+    private var imvPhoto : ImageView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +33,7 @@ class WelcomeActivity : AppCompatActivity() {
 
         tvUserDetail = findViewById(R.id.tvUserDetail)
         btnSignOut = findViewById(R.id.btnSignOut)
+        imvPhoto = findViewById(R.id.imvPhoto)
 
         initializeFirebase()
 
@@ -43,6 +50,7 @@ class WelcomeActivity : AppCompatActivity() {
             var firebaseUser: FirebaseUser? = it.currentUser
             if( firebaseUser!=null ) {
                 tvUserDetail?.setText("IDUser: "+ firebaseUser.uid + " Email: " + firebaseUser.email)
+                Picasso.with(this).load(firebaseUser.photoUrl).into(imvPhoto)
             } else {
                 Log.w(ContentValues.TAG, "onAuthStateChanged - signed_out ")
             }
@@ -62,6 +70,7 @@ class WelcomeActivity : AppCompatActivity() {
     }
 
     private fun signOut() {
+        Firebase.auth.signOut()
         firebaseAuth?.signOut()
 
         var intent : Intent = Intent(this, MainActivity::class.java)

@@ -30,12 +30,20 @@
         android:layout_gravity="center_horizontal"
         android:textSize="15sp"></TextView>
 
+    <ImageView
+        android:id="@+id/imvPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvUserDetail"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"></ImageView>
+
     <Button
         android:id="@+id/btnSignOut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/signout_button"
-        android:layout_below="@id/tvUserDetail"
+        android:layout_below="@id/imvPhoto"
         android:layout_marginTop="50dp"
         android:layout_centerInParent="true"></Button>
 
