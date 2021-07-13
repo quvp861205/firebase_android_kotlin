@@ -28,6 +28,7 @@ import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginResult
 import com.facebook.login.widget.LoginButton
 import com.google.firebase.auth.FacebookAuthProvider
+import com.google.firebase.messaging.FirebaseMessaging
 
 
 class MainActivity : AppCompatActivity() {
@@ -47,6 +48,8 @@ class MainActivity : AppCompatActivity() {
     private var btnSignInFacebook: LoginButton? = null
     private var btnRealtime: Button? = null
     private var btnStorage: Button? = null
+    private var btnNotifications: Button? = null
+
 
     private var editEmail : EditText? = null
     private var editPassword : EditText? = null
@@ -63,6 +66,8 @@ class MainActivity : AppCompatActivity() {
         btnSignInFacebook = findViewById(R.id.btnSignInFacebbok)
         btnRealtime = findViewById(R.id.btnRealtime)
         btnStorage = findViewById(R.id.btnStorage)
+        btnNotifications = findViewById(R.id.btnNotifications)
+
 
         editEmail = findViewById(R.id.etEmail)
         editPassword = findViewById(R.id.etPassword)
@@ -99,8 +104,16 @@ class MainActivity : AppCompatActivity() {
         btnStorage?.setOnClickListener(View.OnClickListener {
             var intent: Intent = Intent(this, FirebaseStorage::class.java)
             startActivity(intent)
-           
+
         })
+
+        btnNotifications?.setOnClickListener(View.OnClickListener {
+            var intent: Intent = Intent(this, NotificationsFirebase::class.java)
+            startActivity(intent)
+
+        })
+
+
 
     }
 

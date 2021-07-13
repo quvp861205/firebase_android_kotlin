@@ -14,5 +14,7 @@
     <string name="btn_download">Descarga imagen</string>
     <string name="btn_upload">Subir imagen</string>
     <string name="button_storage">Firebase Storage</string>
+    <string name="msg_token_fmt">Token Notifications</string>
+    <string name="button_notifications">Notificaiones firebase</string>
 
 </resources>
