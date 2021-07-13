@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
     private var btnRealtime: Button? = null
     private var btnStorage: Button? = null
     private var btnNotifications: Button? = null
+    private var btn_remote_config: Button? = null
 
 
     private var editEmail : EditText? = null
@@ -66,6 +67,7 @@ class MainActivity : AppCompatActivity() {
         btnSignInFacebook = findViewById(R.id.btnSignInFacebbok)
         btnRealtime = findViewById(R.id.btnRealtime)
         btnStorage = findViewById(R.id.btnStorage)
+        btn_remote_config = findViewById(R.id.btnConfig)
         btnNotifications = findViewById(R.id.btnNotifications)
 
 
@@ -109,6 +111,12 @@ class MainActivity : AppCompatActivity() {
 
         btnNotifications?.setOnClickListener(View.OnClickListener {
             var intent: Intent = Intent(this, NotificationsFirebase::class.java)
+            startActivity(intent)
+
+        })
+
+        btn_remote_config?.setOnClickListener(View.OnClickListener {
+            var intent: Intent = Intent(this, RemoteConfig::class.java)
             startActivity(intent)
 
         })

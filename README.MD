@@ -29,4 +29,8 @@ https://firebase.google.com/docs/auth/android/google-signin?hl=es
 
 ![](firestore.png)
 
+**Configurar remotamente la aplicacion**
+
+![](configuracionRemota.png)
+
 

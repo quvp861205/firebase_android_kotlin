@@ -16,5 +16,7 @@
     <string name="button_storage">Firebase Storage</string>
     <string name="msg_token_fmt">Token Notifications</string>
     <string name="button_notifications">Notificaiones firebase</string>
+    <string name="btn_sincronizar">Sincronizar configuracion</string>
+    <string name="btn_remote_config">Configuracion Remota</string>
 
 </resources>

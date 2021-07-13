@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoteConfig"
+    android:orientation="vertical"
+    android:id="@+id/activity_remote">
+
+    <ImageView
+        android:id="@+id/ivConfigImagen"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@android:drawable/ic_dialog_map"
+        android:layout_gravity="center_horizontal"></ImageView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSincronizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_sincronizar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:onClick="syncronizeData"
+        ></com.google.android.material.button.MaterialButton>
+
+</LinearLayout>

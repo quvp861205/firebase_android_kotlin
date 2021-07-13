@@ -72,4 +72,10 @@
         android:layout_height="wrap_content"
         android:text="@string/button_notifications"></Button>
 
+    <Button
+        android:id="@+id/btnConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_remote_config"></Button>
+
 </LinearLayout>
